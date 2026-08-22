@@ -1,0 +1,26 @@
+{
+  "research_title": "From Data to Strategic Action: An Explainable AI Framework for Risk-Aware Strategic Decision Intelligence",
+  "dataset_name": "UCI Bank Marketing",
+  "dataset_url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+  "dataset_doi": "10.24432/C5K306",
+  "random_seed": 42,
+  "test_size": 0.15,
+  "calibration_size": 0.15,
+  "decision_size": 0.10,
+  "rf_n_estimators": 250,
+  "rf_min_samples_leaf": 5,
+  "rf_max_features": "sqrt",
+  "decision_grid_min": 0.05,
+  "decision_grid_max": 0.95,
+  "decision_grid_step": 0.01,
+  "top_k_rate": 0.20,
+  "xai_sample_size": 500,
+  "utility_scenarios": {
+    "benefit_if_success": [50, 100, 200],
+    "action_cost": [5, 10, 20],
+    "missed_opportunity_cost": [10, 30, 50]
+  },
+  "excluded_features": [
+    "duration"
+  ]
+}
